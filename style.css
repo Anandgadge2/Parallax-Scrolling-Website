@@ -1,0 +1,134 @@
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+  * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'poppins'sans-serif;
+  }
+
+  body {
+      min-height: 100vh;
+      overflow-x: hidden;
+  }
+
+  header {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      padding: 30px 100px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 100;
+
+  }
+
+  .logo {
+      font-size: 3em;
+      color: #fff;
+      user-select: none;
+      text-shadow: 2px 4px 5px #16010b;
+  }
+
+  .navigation a {
+      position: relative;
+      font-size: 1.1 em;
+      color: #fff;
+      font-weight: 600;
+      text-decoration: none;
+      text-shadow: 0px 0px 5px #ff8b06;
+      margin-left: 20px;
+      padding: 6px 15px;
+      transition: 0.5s;
+  }
+
+  .navigation a:hover,
+  .navigation a.active {
+      color: #333;
+  }
+
+  .navigation a span {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: #fff;
+      border-radius: 30px;
+      z-index: -1;
+      transform: scale(0);
+      opacity: 0;
+      transition: 0.5s;
+  }
+
+  .navigation a:hover span,
+  .navigation a.active span {
+      transform: scale(1);
+      opacity: 1;
+  }
+
+  .parallax {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: url('back.png') no-repeat;
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+  }
+
+  #text {
+      padding-bottom: 250px;
+      position: absolute;
+      font-size: 6em;
+      color: #09192e;
+      text-shadow: 2px 4px 5px #fcf6f9;
+  }
+
+  .parallax img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      pointer-events: none;
+  }
+
+  .parallax img#gate-left {
+      position: fixed;
+      transform: translateX(-282px);
+  }
+
+  .parallax img#gate-right {
+      position: fixed;
+      transform: translateX(305px);
+  }
+
+  .sec {
+      position: relative;
+      background: #020912;
+      padding: 30px 100px;
+  }
+
+  .sec h2 {
+      font-size: 4em;
+      color: #ffffff;
+      margin-bottom: 10px;
+      text-shadow: 2px 4px 5px #750039;
+      transition: 0.5s;
+  }
+
+  .sec h2:hover {
+      color: rgb(255, 115, 0);
+  }
+
+  .sec p {
+      font-size: 1em;
+      color: #fff;
+      font-weight: 300;
+      text-align: justify;
+
+  }
